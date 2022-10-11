@@ -18,6 +18,9 @@ public class PlayerMotor : MonoBehaviour
     /// </summary>
     private PlayerMotor motor;
 
+    /// <summary>
+    /// After player start movements
+    /// </summary>
     void Start()
     {
         motor = GetComponent<PlayerMotor>();
