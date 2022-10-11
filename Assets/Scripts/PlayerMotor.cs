@@ -34,6 +34,7 @@ public class PlayerMotor : MonoBehaviour
         //  Horizontal movement
         float _xMov = Input.GetAxisRaw("Horizotal");
 
+        //  Vertical movement
         float _zMov = Input.GetAxisRaw("Vertical");
 
     }
