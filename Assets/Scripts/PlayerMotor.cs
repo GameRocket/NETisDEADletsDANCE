@@ -25,4 +25,16 @@ public class PlayerMotor : MonoBehaviour
     {
         motor = GetComponent<PlayerMotor>();
     }
+
+    /// <summary>
+    /// Calculate movement velocity as a 3D Vector
+    /// </summary>
+    void Update()
+    {
+        //  Horizontal movement
+        float _xMov = Input.GetAxisRaw("Horizotal");
+
+        float _zMov = Input.GetAxisRaw("Vertical");
+
+    }
 }
