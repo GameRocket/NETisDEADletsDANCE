@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //  We want to always have rigid body with our player motor
-[RequireComponent(typeof(RigidBody))]
+[RequireComponent(typeof(PlayerMotor))]
+
 
 public class PlayerMotor : MonoBehaviour
 {
