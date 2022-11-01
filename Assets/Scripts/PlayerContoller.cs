@@ -1,7 +1,8 @@
 using UnityEngine;
 
 /// <summary>
-/// Than we add a PlayerController it add a PlayerMotor which add a Rigidbody
+/// <b>This script is used to edit default player controller</b>
+/// <para>Than we add a PlayerController it add a PlayerMotor which add a Rigidbody</para>
 /// </summary>
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerContoller : MonoBehaviour

@@ -1,13 +1,25 @@
 using UnityEngine;
 
-//  We want to always have rigid body with our player motor
+/// <summary>
+/// <b>This script created to calculate player velocity</b>
+/// <para>We want to always have rigid body with our player motor</para>
+/// </summary>
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMotor : MonoBehaviour
 {
+    /// <summary>
+    /// Private variable for velocity that will be used in this class
+    /// </summary>
     private Vector3 velocity = Vector3.zero;
 
+    /// <summary>
+    /// Rigidbody variable
+    /// </summary>
     private Rigidbody rb;
 
+    /// <summary>
+    /// Get a rigidbody
+    /// </summary>
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -30,9 +42,12 @@ public class PlayerMotor : MonoBehaviour
         PerformMovement();
     }
 
-    //  Perform movement based on velocity variable
+    /// <summary>
+    /// Perform movement based on velocity variable
+    /// </summary>
     void PerformMovement()
     {
+        //  Check if velocity was changed at +least once already
         if ( velocity != Vector3.zero )
         {
             rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
