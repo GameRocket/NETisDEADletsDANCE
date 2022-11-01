@@ -44,5 +44,8 @@ public class PlayerContoller : MonoBehaviour
 
         //  Calculating direction of velocity vector and multiply by current speed variable
         Vector3 _velocity = (_movHorizotal + _movVertical).normalized * speed;
+
+        //  Apply movement our movement vector
+        motor.Move(_velocity);
     }
 }
