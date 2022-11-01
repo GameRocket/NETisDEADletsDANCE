@@ -35,5 +35,14 @@ public class PlayerContoller : MonoBehaviour
 
         //  Vertical movement
         float _zMov = Input.GetAxisRaw("Vertical");
+
+        //  Perform horizontal movement
+        Vector3 _movHorizotal = transform.right * _xMov;    //  Value that will change: (1, 0, 0)
+
+        //  Perform vertical movement
+        Vector3 _movVertical = transform.forward * _zMov;   //  Value that will change: (0, 0, 1)
+
+        //  Calculating direction of velocity vector and multiply by current speed variable
+        Vector3 _velocity = (_movHorizotal + _movVertical).normalized * speed;
     }
 }
