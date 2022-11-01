@@ -1,42 +1,56 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-//  We want to always have rigid body with our player motor
-[RequireComponent(typeof(PlayerMotor))]
-
-
+/// <summary>
+/// <b>This script created to calculate player velocity</b>
+/// <para>We want to always have rigid body with our player motor</para>
+/// </summary>
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerMotor : MonoBehaviour
 {
     /// <summary>
-    /// Player speed
+    /// Private variable for velocity that will be used in this class
     /// </summary>
-    [SerializeField]
-    private float speed = 5f;
+    private Vector3 velocity = Vector3.zero;
 
     /// <summary>
-    /// Player motor reference
+    /// Rigidbody variable
     /// </summary>
-    private PlayerMotor motor;
+    private Rigidbody rb;
 
     /// <summary>
-    /// After player start movements
+    /// Get a rigidbody
     /// </summary>
     void Start()
     {
-        motor = GetComponent<PlayerMotor>();
+        rb = GetComponent<Rigidbody>();
     }
 
     /// <summary>
-    /// Calculate movement velocity as a 3D Vector
+    /// Gets a movement vector from player controller
     /// </summary>
-    void Update()
+    /// <param name="_velocity"></param>
+    public void Move(Vector3 _velocity)
     {
-        //  Horizontal movement
-        float _xMov = Input.GetAxisRaw("Horizotal");
+        velocity = _velocity;
+    }
 
-        //  Vertical movement
-        float _zMov = Input.GetAxisRaw("Vertical");
+    /// <summary>
+    /// Run every physics iteration
+    /// </summary>
+    void FixedUpdate()
+    {
+        PerformMovement();
+    }
 
+    /// <summary>
+    /// Perform movement based on velocity variable
+    /// </summary>
+    void PerformMovement()
+    {
+        //  Check if velocity was changed at +least once already
+        if ( velocity != Vector3.zero )
+        {
+            rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
+        }
     }
 }
