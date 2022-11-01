@@ -31,7 +31,7 @@ public class PlayerContoller : MonoBehaviour
     void Update()
     {
         //  Horizontal movement
-        float _xMov = Input.GetAxisRaw("Horizotal");
+        float _xMov = Input.GetAxisRaw("Horizontal");
 
         //  Vertical movement
         float _zMov = Input.GetAxisRaw("Vertical");
