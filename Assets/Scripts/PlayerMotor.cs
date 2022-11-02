@@ -8,9 +8,14 @@ using UnityEngine;
 public class PlayerMotor : MonoBehaviour
 {
     /// <summary>
-    /// Private variable for velocity that will be used in this class
+    /// Private variable for velocity
     /// </summary>
     private Vector3 velocity = Vector3.zero;
+
+    /// <summary>
+    /// Private variable for rotation
+    /// </summary>
+    private Vector3 rotation = Vector3.zero;
 
     /// <summary>
     /// Rigidbody variable
@@ -35,11 +40,21 @@ public class PlayerMotor : MonoBehaviour
     }
 
     /// <summary>
+    /// Gets a rotational vector
+    /// </summary>
+    /// <param name="_rotation"></param>
+    public void Rotate(Vector3 _rotation)
+    {
+        rotation = _rotation;
+    }
+
+    /// <summary>
     /// Run every physics iteration
     /// </summary>
     void FixedUpdate()
     {
         PerformMovement();
+        PerformRotation();
     }
 
     /// <summary>
@@ -52,5 +67,13 @@ public class PlayerMotor : MonoBehaviour
         {
             rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
         }
+    }
+
+    /// <summary>
+    /// Perform rotation based on rotation variable
+    /// </summary>
+    void PerformRotation()
+    {
+        rb.MoveRotation(rb.rotation * Quaternion.Euler(rotation));
     }
 }
