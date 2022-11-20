@@ -47,7 +47,7 @@ public class PlayerContoller : MonoBehaviour
         Vector3 _movVertical = transform.forward * _zMov;   //  Value that will change: (0, 0, 1)
 
         //  Calculating direction of velocity vector and multiply by current speed variable
-        Vector3 _velocity = (_movHorizotal + _movVertical).normalized * speed;
+        Vector3 _velocity = (_movHorizotal + _movVertical).normalized; //* speed;
 
         //  Apply movement our movement vector
         motor.Move(_velocity);
