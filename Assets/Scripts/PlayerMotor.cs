@@ -18,6 +18,11 @@ public class PlayerMotor : MonoBehaviour
     private Vector3 rotation = Vector3.zero;
 
     /// <summary>
+    /// 
+    /// </summary>
+    private Vector3 cameraRotation = Vector3.zero;
+
+    /// <summary>
     /// Rigidbody variable
     /// </summary>
     private Rigidbody rb;
@@ -46,6 +51,11 @@ public class PlayerMotor : MonoBehaviour
     public void Rotate(Vector3 _rotation)
     {
         rotation = _rotation;
+    }
+
+    public void RotateCamera(Vector3 _cameraRotation)
+    {
+        cameraRotation = _cemeraRotation;
     }
 
     /// <summary>
