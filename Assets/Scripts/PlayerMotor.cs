@@ -55,7 +55,7 @@ public class PlayerMotor : MonoBehaviour
 
     public void RotateCamera(Vector3 _cameraRotation)
     {
-        cameraRotation = _cemeraRotation;
+        cameraRotation = _cameraRotation;
     }
 
     /// <summary>
