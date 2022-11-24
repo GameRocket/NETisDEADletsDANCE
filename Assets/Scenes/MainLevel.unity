@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5026400002369798389, guid: 4ab531eae26e14d419e728c55c54ffe0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b51f49557046b24b9299c9242acc771, type: 2}
     - target: {fileID: 8417732274193530762, guid: 4ab531eae26e14d419e728c55c54ffe0, type: 3}
       propertyPath: m_Name
       value: OrigamiBox_02
@@ -368,6 +372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5026400002369798389, guid: 4ab531eae26e14d419e728c55c54ffe0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b51f49557046b24b9299c9242acc771, type: 2}
     - target: {fileID: 8417732274193530762, guid: 4ab531eae26e14d419e728c55c54ffe0, type: 3}
       propertyPath: m_Name
       value: OrigamiBox_04
@@ -674,6 +682,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5026400002369798389, guid: 4ab531eae26e14d419e728c55c54ffe0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b51f49557046b24b9299c9242acc771, type: 2}
     - target: {fileID: 8417732274193530762, guid: 4ab531eae26e14d419e728c55c54ffe0, type: 3}
       propertyPath: m_Name
       value: OrigamiBox_01
@@ -830,6 +842,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5026400002369798389, guid: 4ab531eae26e14d419e728c55c54ffe0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b51f49557046b24b9299c9242acc771, type: 2}
     - target: {fileID: 8417732274193530762, guid: 4ab531eae26e14d419e728c55c54ffe0, type: 3}
       propertyPath: m_Name
       value: OrigamiBox_03
