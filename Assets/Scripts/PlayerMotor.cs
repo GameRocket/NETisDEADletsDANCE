@@ -8,6 +8,14 @@ using UnityEngine;
 public class PlayerMotor : MonoBehaviour
 {
     /// <summary>
+    /// Optional variable reference to our camera
+    /// If we don't have a camera we wan't to control, the rotation will be around the Y
+    /// If we will use it rotation will be around Y and X
+    /// </summary>
+    [SerializeField]
+    private Camera cam;
+
+    /// <summary>
     /// Private variable for velocity
     /// </summary>
     private Vector3 velocity = Vector3.zero;

@@ -68,7 +68,7 @@ public class PlayerContoller : MonoBehaviour
         float _xRot = Input.GetAxisRaw("Mouse Y");
 
         //  Calculate local rotation
-        Vector3 _cameraRotation = new Vector3(0f, _xRot, 0f) * lookSensitivity;
+        Vector3 _cameraRotation = new Vector3(_xRot, 0f, 0f) * lookSensitivity;
 
         //  Apply rotation
         motor.RotateCamera(_cameraRotation);
