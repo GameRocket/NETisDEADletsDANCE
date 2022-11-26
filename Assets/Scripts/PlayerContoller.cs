@@ -14,7 +14,7 @@ public class PlayerContoller : MonoBehaviour
     private float speed = 5f;
 
     [SerializeField]
-    private float lookSensitivity = 13f;
+    private float lookSensitivity = 3f;
 
     /// <summary>
     /// Player motor reference
@@ -34,6 +34,8 @@ public class PlayerContoller : MonoBehaviour
     /// </summary>
     void Update()
     {
+        //  In next steps we calculating velocity as a 3D Vector
+
         //  Horizontal movement
         float _xMov = Input.GetAxisRaw("Horizontal");
 
@@ -66,7 +68,7 @@ public class PlayerContoller : MonoBehaviour
         float _xRot = Input.GetAxisRaw("Mouse Y");
 
         //  Calculate local rotation
-        Vector3 _cameraRotation = new Vector3(0f, _xRot, 0f) * lookSensitivity;
+        Vector3 _cameraRotation = new Vector3(_xRot, 0f, 0f) * lookSensitivity;
 
         //  Apply rotation
         motor.RotateCamera(_cameraRotation);
