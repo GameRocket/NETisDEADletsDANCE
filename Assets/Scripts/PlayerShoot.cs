@@ -7,7 +7,7 @@ public class PlayerShoot : MonoBehaviour
     /// <summary>
     /// Reference to our player camera
     /// </summary>
-    [SerializeFiled]
+    [SerializeField]
     private Camera cam;
 
     /// <summary>
