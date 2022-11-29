@@ -22,4 +22,13 @@ public class PlayerShoot : MonoBehaviour
             this.enabled = false;
         }
     }
+
+    void Update()
+    {
+        //  Check if we get some input
+        if (Input.GetButtonDown("Fire1"))
+        {
+
+        }
+    }
 }
