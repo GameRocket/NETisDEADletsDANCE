@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class for weapon variables
+/// </summary>
 [System.Serializable]
-public class PlayerWeapon : MonoBehaviour
+public class PlayerWeapon
 {
     /// <summary>
     /// Name of our weapon
