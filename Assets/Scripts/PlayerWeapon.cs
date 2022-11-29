@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerWeapon : MonoBehaviour
+/// <summary>
+/// Class for weapon variables
+/// </summary>
+[System.Serializable]
+public class PlayerWeapon
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    /// <summary>
+    /// Name of our weapon
+    /// </summary>
+    public string name = "Glock";
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    /// <summary>
+    /// Damage variable
+    /// </summary>
+    public float damage = 10f;
+
+    /// <summary>
+    /// Range of our weapon
+    /// </summary>
+    public float range = 100f;
+
+
 }
