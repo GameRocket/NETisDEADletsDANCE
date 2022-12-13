@@ -12,6 +12,9 @@ A procedural level generation system will be used to create the game world.
 * Create hp bar
 * Create timer
 * Create menu
+* Create enemy model
+* Create enemy animation
+* Create shooting effect
 
 ## Unity version
 Unity engine version 2022.2.0f1
