@@ -8,7 +8,7 @@ So here i'm trying to work on Multiplayer First Person Shooter project.
 A procedural level generation system will be used to create the game world.
 
 ## Things to do
-* Create shooting system
+* Create shooting system	-	*Done*
 * Create hp bar
 * Create timer
 * Create menu
