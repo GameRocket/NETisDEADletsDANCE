@@ -9,6 +9,7 @@ A procedural level generation system will be used to create the game world.
 
 ## Things to do
 * Create shooting system	-	*Done*
+* Create walls - *Done*
 * Create hp bar
 * Create timer
 * Create menu
