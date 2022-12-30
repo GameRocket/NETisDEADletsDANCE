@@ -12,6 +12,7 @@ A procedural level generation system will be used to create the game world.
 * **Create walls** - *Done*
 * **Create portals** - *Done*
 * **Create menu** - *Done*
+* Create jump
 * Create hp bar
 * Create timer
 * Create enemy model
