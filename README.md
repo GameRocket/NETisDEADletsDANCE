@@ -2,21 +2,11 @@
 
 First person shooter with portals.
 
-## More about
-So here i'm trying to work on Multiplayer First Person Shooter project.
-A procedural level generation system will be used to create the game world.
+Project is moved to new repository.
 
-## Things to do
-* **Create shooting system**	-	*Done*
-* **Create walls** - *Done*
-* **Create portals** - *Done*
-* **Create menu** - *Done*
-* Create jump
-* Create hp bar
-* Create timer
-* Create enemy model
-* Create enemy animation
-* Create shooting effect
+## More about
+Initially, the project was conceived as a requiem for the "UNet" multiplayer system, but later it was decided to continue its development in a private repository already under new multiplayer solution "NetCode".
+In this project I create a set of scripts and prefabs for a project where there will be portals and first-person shooting. Here we have a 3D scene with walls, portals, some player script, some sort of shooting system with RayCast and simple menu for a game. Feel free to use any kind of this for your projects if you want.
 
 ## Unity version
 Unity engine version 2022.2.0f1
